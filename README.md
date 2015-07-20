@@ -17,7 +17,7 @@
  * Control administrativo centralizado
 
 #### Equipo de clase empresarial
-Se instala para proporcionar una red ** Altamente confiable **.
+Se instala para proporcionar una red *Altamente confiable*.
 
 #### Diseño jerarquico de la red
 Divide la funcionalidad de la red en tres capas.
