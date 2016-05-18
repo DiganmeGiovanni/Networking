@@ -31,4 +31,45 @@ El objetivo de la capa de red es hacer que los datos lleguen desde el origen al 
 En este nivel se realiza el direccionamiento lógico y la determinación de la ruta de los datos hasta su receptor final.
 
 #### 4. Nivel de transporte.
+Capa encargada de efectuar el transporte de los datos (que se encuentran dentro del paquete) de la máquina origen a la de destino, independizándolo del tipo de red física que esté utilizando. La PDU de la capa 4 se llama Segmento o Datagrama, dependiendo de si corresponde a TCP o UDP. Sus protocolos son TCP y UDP; el primero orientado a conexión y el otro sin conexión. Trabajan, por lo tanto, con puertos lógicos y junto con la capa red dan forma a los conocidos como Sockets IP:Puerto (191.16.200.54:80).
+
+#### 5. Nivel de sesióñ
+Esta capa es la que se encarga de mantener y controlar el enlace establecido entre dos computadores que están transmitiendo datos de cualquier índole. Por lo tanto, el servicio provisto por esta capa es la capacidad de asegurar que, dada una sesión establecida entre dos máquinas, la misma se pueda efectuar para las operaciones definidas de principio a fin, reanudándolas en caso de interrupción. En muchos casos, los servicios de la capa de sesión son parcial o totalmente prescindibles.
+
+#### 6. Nivel de presentacióñ
+El objetivo es encargarse de la representación de la información, de manera que aunque distintos equipos puedan tener diferentes representaciones internas de caracteres los datos lleguen de manera reconocible.
+Esta capa es la primera en trabajar más el contenido de la comunicación que el cómo se establece la misma. En ella se tratan aspectos tales como la semántica y la sintaxis de los datos transmitidos, ya que distintas computadoras pueden tener diferentes formas de manejarlas.
+Esta capa también permite cifrar los datos y comprimirlos. Por lo tanto, podría decirse que esta capa actúa como un traductor.
+
+#### 7. Nivel de aplicacióñ
+Ofrece a las aplicaciones la posibilidad de acceder a los servicios de las demás capas y define los protocolos que utilizan las aplicaciones para intercambiar datos, como correo electrónico (Post Office Protocol y SMTP), gestores de bases de datos y servidor de ficheros (FTP), por UDP pueden viajar (DNS y Routing Information Protocol). Hay tantos protocolos como aplicaciones distintas y puesto que continuamente se desarrollan nuevas aplicaciones el número de protocolos crece sin parar.
+Cabe aclarar que el usuario normalmente no interactúa directamente con el nivel de aplicación. Suele interactuar con programas que a su vez interactúan con el nivel de aplicación pero ocultando la complejidad subyacente.
+
+###Regla nemotecnica.
+A fin de facilitar el aprendizaje y memorización de los nombres de las capas que componen el modelo; una regla sencilla del BRAPE es memorizarlas como una sigla mnemotécnica: FERTSPA, que en inglés sonaría como First Spa, primer spa en castellano, el cual se define de la siguiente manera:
+ * Aplicación
+ * Presentación
+ * Sesión
+ * Transporte
+ * Red
+ * Enlace de datos
+ * Física
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
